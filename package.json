@@ -52,9 +52,5 @@
     ]
   },
   "devDependencies": {},
-  "proxies": {
-    "/api/": {
-      "origin": "https://powerful-refuge-13768.herokuapp.com/"
-    }
-  }
+  "proxy": "https://powerful-refuge-13768.herokuapp.com/"
 }
