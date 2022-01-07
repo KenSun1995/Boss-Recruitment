@@ -10,6 +10,7 @@
     "axios": "^0.21.4",
     "babel-plugin-import": "^1.13.3",
     "customize-cra": "^1.0.0",
+    "http-proxy-middleware": "^2.0.1",
     "js-cookie": "^3.0.1",
     "less": "^2.7.3",
     "less-loader": "^6.0.0",
@@ -51,6 +52,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {},
-  "proxy": "https://powerful-refuge-13768.herokuapp.com/"
+  "devDependencies": {}
 }
