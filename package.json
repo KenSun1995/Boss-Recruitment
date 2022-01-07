@@ -53,5 +53,5 @@
     ]
   },
   "devDependencies": {},
-  "proxy": "localhost:4000"
+  "proxy": "https://localhost:4000"
 }
