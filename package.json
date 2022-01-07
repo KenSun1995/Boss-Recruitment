@@ -29,8 +29,9 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "react-app-rewired start && cd bob-recruitment-server && npm start",
-    "build": "react-app-rewired build",
+    "start-client": "react-app-rewired start",
+    "start": "cd bob-recruitment-server && npm start",
+    "build": "react-app-rewired build && (cd bob-recruitment-server && npm install)",
     "test": "react-app-rewired test --env=jsdom",
     "eject": "react-scripts eject"
   },
