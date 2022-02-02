@@ -6,7 +6,7 @@ import ajax from './ajax'
 /**
  * register interface
  */
-export const reqRegister = (user) => ajax('https://myapp-boss-server.herokuapp.com/register', user, 'POST');
+export const reqRegister = (user) => ajax('/register', user, 'POST');
 /**
  * login interface
  */
