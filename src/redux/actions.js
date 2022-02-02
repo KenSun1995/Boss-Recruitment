@@ -99,7 +99,7 @@ export const register = (user) => {
     if (password.length < 6) {
         return errorMsg('the length of password should more than 6');
     }
-    var reg = /^(?=.*\d)(?=.*[!@#$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+    var reg = /^(?=.*\d)(?=.*[!@#.$%^&*])(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
     if (!reg.test(password)) {
         return errorMsg('passwords miss at least a symbol, upper and lower case letters and a number');
     }
