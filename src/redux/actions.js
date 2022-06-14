@@ -14,7 +14,7 @@ import { AUTH_SUCCESS, ERROR_MSG, RECEIVE_USER, RESET_USER, RECEIVE_USER_LIST, R
 function initIO(dispatch, userId) {
     if (!io.socket) {
         // connect server, get socket obj
-        io.socket = io('ws://myapp-boss-server.herokuapp.com/', { transports: ['websocket'] })
+        io.socket = io('wss://myapp-boss-server.herokuapp.com/', { transports: ['websocket'] })
         // bind 'receiveMessage' monitor, to receive msg from server
         io.socket.on('receiveMsg', function (chatMsg) {
             console.log('Browser received msg:', chatMsg);

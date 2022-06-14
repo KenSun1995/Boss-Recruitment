@@ -1,7 +1,7 @@
 // import client io
 import io from 'socket.io-client'
 // connect server, get socket obj
-const socket = io('ws://localhost:4000', { transports: ['websocket'] })
+const socket = io('wss://localhost:4000', { transports: ['websocket'] })
 // bind 'receiveMessage' monitor, to receive msg from server
 socket.on('receiveMsg', function (data) {
     console.log('Browser received msg:', data)
